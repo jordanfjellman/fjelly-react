@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "allowImportExportEverywhere": true,
+    "codeFrame": false,
+    "ecmaVersion": 2015,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "jest",
+    "react"
+  ],
+  "rules": {
+    "comma-dangle": ["warn", "only-multiline"],
+    "eol-last": ["warn", "always"],
+    "indent": ["warn", 2],
+    "jest/expect-expect": "error",
+    "no-console": "error",
+    "no-trailing-spaces": "warn",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "prefer-const": "warn",
+    "quotes": ["warn", "single"],
+    "semi": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
